@@ -17,14 +17,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(),
       drawer: Drawer(
-          child: ListView(
-            children: const [
-              MyDrawerHeader(),
-              DrawList(),
-            ],
-          ),
+        child: ListView(
+          children: const [
+            UserAccountsDrawerHeader(
+              accountName: Text("Ahmed"),
+              accountEmail: Text(""),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage("assets/images/profile.jpg"),
+              ),
+              decoration:
+                  BoxDecoration(color: Color.fromARGB(255, 192, 190, 190)),
+            ),
+            DrawList(),
+          ],
         ),
-
+      ),
     );
   }
 }

@@ -58,6 +58,24 @@ class DrawList extends StatelessWidget {
                 'Rate',
                 style: TextStyle(fontSize: 20),
               )),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              border: Border(
+                bottom: BorderSide(width: 1.0, color: Colors.black),
+                top: BorderSide(width: 1.0, color: Colors.black),
+              ),
+            ),
+            child: const ListTile(
+              leading: Icon(Icons.logout),
+              title: Text(
+                'Logout',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+          ),
         ],
       ),
     );
