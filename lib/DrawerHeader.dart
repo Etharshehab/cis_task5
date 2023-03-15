@@ -26,7 +26,6 @@ class _DrawerHeaderState extends State<MyDrawerHeader> {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: AssetImage("assets/images/profile.jpg"),
-                  fit: BoxFit.cover,
                 ),
               )),
           const Text(

@@ -16,8 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: SingleChildScrollView(
-        child: Drawer(
+      drawer: Drawer(
           child: ListView(
             children: const [
               MyDrawerHeader(),
@@ -25,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-      ),
+
     );
   }
 }

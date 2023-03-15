@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class FeedBack extends StatelessWidget {
   const FeedBack({super.key});
@@ -12,6 +10,9 @@ class FeedBack extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         // ignore: prefer_const_literals_to_create_immutables
         children: [
+          const SizedBox(
+            height: 20,
+          ),
           const Image(
             image: AssetImage("assets/images/2.jpg"),
             width: 200,
